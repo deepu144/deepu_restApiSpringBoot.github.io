@@ -18,9 +18,5 @@ public class Laptop {
 	private String processor;
 	@ManyToOne
 	private Person person;
-	@Override
-	public String toString() {
-		return name;
-	}
 	
 }
