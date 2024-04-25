@@ -10,13 +10,11 @@ import lombok.Data;
 @Data
 @Entity
 public class Laptop {
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	private String name;
 	private String processor;
 	@ManyToOne
 	private Person person;
-	
 }
